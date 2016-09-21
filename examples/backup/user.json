@@ -1,0 +1,27 @@
+/*
+TODO:数据格式需要统一
+*/
+{
+  "tableName": "actor",
+  "createTime": "2016-09-01",
+  "columns": [
+    {
+      "name":"actorId",
+      "type":"unsigned int"
+    },
+    {
+      "name":"firstName",
+      "type":"String"
+    },
+    {
+      "name":"lastName",
+      "type":"String"
+    },
+    {
+      "name":"lastUpdate",
+      "type":"DateTime"
+    }
+  ],
+  "owner": "lzy",
+  "type": "entity"
+}

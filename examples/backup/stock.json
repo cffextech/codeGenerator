@@ -1,0 +1,14 @@
+{
+  "tableName": "stock",
+  "createTime": "2016-09-01",
+  "columns": [
+    "stockId",
+    "stockName",
+    "max",
+    "min",
+    "openingPrice",
+    "closingPrice"
+  ],
+  "owner": "lzy",
+  "type": "entity"
+}

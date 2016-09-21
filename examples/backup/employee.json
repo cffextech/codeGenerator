@@ -1,0 +1,10 @@
+{
+    "tableName": "employee",
+    "createTime": "2016-08-31",
+    "columns": [
+        "id",
+        "name"
+    ],
+    "owner": "lzy",
+    "type": "entity"
+}

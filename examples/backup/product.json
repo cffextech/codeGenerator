@@ -1,0 +1,12 @@
+{
+  "tableName": "product",
+  "createTime": "2016-09-01",
+  "columns": [
+    "productId",
+    "productName",
+    "supplier",
+    "productTime"
+  ],
+  "owner": "lzy",
+  "type": "entity"
+}

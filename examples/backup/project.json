@@ -1,0 +1,12 @@
+{
+  "tableName": "project",
+  "createTime": "2016-09-01",
+  "columns": [
+    "projectId",
+    "projectName",
+    "department",
+    "projectCost"
+  ],
+  "owner": "lzy",
+  "type": "entity"
+}

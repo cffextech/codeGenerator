@@ -1,0 +1,12 @@
+{
+  "tableName": "template",
+  "createTime": "2016-09-01",
+  "columns": [
+    "templateId",
+    "templateName",
+    "author",
+    "updateTime"
+  ],
+  "owner": "lzy",
+  "type": "entity"
+}
