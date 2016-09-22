@@ -14,7 +14,7 @@ public interface GenerateConst {
 	//类型关键字
 	public static String GENERATE_JAVA_CODE_CLASS = "class ";
 	public static String GENERATE_JAVA_CODE_PACKAGE = "package ";
-	
+
 	// java 关键字
 	public static String GENERATE_JAVA_CODE_EXTENDS = "extends ";
 	public static String GENERATE_JAVA_CODE_VOID = "void ";
@@ -24,10 +24,10 @@ public interface GenerateConst {
 	public static String GENERATE_JAVA_CODE_DOUBLE = "java.lang.Double ";
 	public static String GENERATE_JAVA_CODE_TIMESTAMP = "java.sql.Timestamp ";
 	public static String GENERATE_JAVA_CODE_SET = "java.util.Set ";
-	
+
 	/*xml*/
 	public static String GENERATE_XML_CODE_XML_HEAD="<?xml version=\"1.0\"?> ";
-	
+
 	//HBM
 	public static String GENERATE_HBM_CODE_CLASS = "class ";
 	public static String GENERATE_HBM_CODE_NAME = "name ";
@@ -38,5 +38,5 @@ public interface GenerateConst {
 	public static String GENERATE_HBM_CODE_NOTNULL = "not-null ";
 	public static String GENERATE_HBM_CODE_INSERT = "insert";
 	public static String GENERATE_HBM_CODE_UPDATE = "update";
-	
+
 }

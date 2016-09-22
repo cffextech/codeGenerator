@@ -14,8 +14,6 @@ import org.dom4j.io.SAXReader;
 
 /**
  * Parser File which dataType is Xml
- * 解析XML文件
- * TODO 将XmlParser作为PdmParser的父类
  * @author cr
  *
  */
@@ -23,21 +21,21 @@ public class XmlParser {
 
 	protected Element element;
 	protected Document document;
-	
+
 	public XmlParser(String path){
 		readPdm(path);
 	}
-	
+
 	public XmlParser(Element element){
 		this.element = element;
 	}
-	
+
 	public XmlParser setElement(Element element){
 		this.element = element;
 		return this;
 	}
-	
-	
+
+
 	private void readPdm(String path){
 		if(path == null || path.isEmpty())
 			throw new RuntimeException("path is invalid:"+path);
@@ -50,11 +48,11 @@ public class XmlParser {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public String attr(String attrName){
 		return this.element.attributeValue(attrName);
 	}
-	
+
 	@SuppressWarnings("rawtypes")
 	public List find(String elementName){
 		List<XmlParser> rtn = new ArrayList<XmlParser>();
@@ -64,27 +62,27 @@ public class XmlParser {
 			elements =  document.selectNodes(elementName).iterator();
 		else
 			elements = element.selectNodes(elementName).iterator();
-		
+
 		while (elements.hasNext()) {
 			rtn.add(new XmlParser((Element)elements.next()));
 		}
-		
+
 		if(rtn.isEmpty())
 			return null;
 		return rtn;
 	}
-	
+
 	public XmlParser findOne(String elementName){
 		if(element != null)
 			return this.setElement(element.element(elementName));
 		return null;
 	};
-	
+
 	public XmlParser getParent(){
 		this.element = element.getParent();
 		return this;
 	}
-	
+
 	public XmlParser getParentByNodeName(String nodeName){
 		for(Element e = element;e!=null;e=e.getParent()){
 			if(e.getQName().getName().equals(nodeName.trim())){
@@ -92,19 +90,19 @@ public class XmlParser {
 				return this;
 			}
 		}
-			
+
 		return null;
 	}
-	
+
 	public Element toElement(){
 		return element;
 	}
-	
+
 	public String getChildText(String nodeName){
 		if(element == null)
 			return null;
 		return element.elementTextTrim(nodeName);
 	}
-	
-	
+
+
 }

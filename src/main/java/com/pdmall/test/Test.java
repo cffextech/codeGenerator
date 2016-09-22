@@ -2,32 +2,29 @@ package com.pdmall.test;
 
 import java.util.List;
 
+import junit.framework.TestCase;
+
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.Node;
 
-import junit.framework.TestCase;
-
 import com.pdmall.build.PdmEntityBuilder;
 import com.pdmall.config.Config;
 import com.pdmall.entities.PdmTable;
-import com.pdmall.generate.CodeGenerator;
-import com.pdmall.generate.JavaGenerator;
 
 
 public class Test extends TestCase{
 
+
 	public void testConfig() {
 		assertNotNull(Config.get("pdm.path"));
 	}
-	
+
 	public void testPdmParser(){
 		PdmEntityBuilder p = new PdmEntityBuilder();
 		List<PdmTable> pdmTables = p.parse();
-		CodeGenerator javaGenerater= new JavaGenerator();
-		javaGenerater.generate(pdmTables);
 	}
-	
+
 //	public void testPrintDocument(){
 //		SAXReader reader = new SAXReader();
 //		File f = new File("_modules/platform/pdm/platform.pdm");
@@ -39,7 +36,7 @@ public class Test extends TestCase{
 //		}
 //	}
 
-	
+
 	public void treeWalk(Document doc) {
 		treeWalk(doc.getRootElement(),0);
 	}

@@ -2,12 +2,9 @@ package com.handler;
 
 import java.io.File;
 import java.io.IOException;
-/*
-* 文件的处理
-* */
-public class FileHandler {
 
-	public static File createFile(String fileFoder, String fileName) throws IOException{
+public class FileHandler {
+	public static File createFile(String fileFoder,String fileName) throws IOException{
 		File foder = new File(fileFoder);
 		File file = new File(fileFoder+fileName);
 		if(!foder.exists()){
@@ -17,7 +14,7 @@ public class FileHandler {
 			file.createNewFile();
 		return file;
 	}
-	
+
 	public static boolean isFileExists(String fileName){
 		File f = new File(fileName);
 		return f.exists();

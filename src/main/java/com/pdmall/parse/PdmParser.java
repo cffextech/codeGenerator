@@ -14,15 +14,15 @@ import org.dom4j.io.SAXReader;
 public class PdmParser{
 	protected Element element;
 	protected Document document;
-	
+
 	public PdmParser(String path){
 		readPdm(path);
 	}
-	
+
 	public PdmParser(Element element){
 		this.element = element;
 	}
-	
+
 	/**
 	 * 读取pdm
 	 * @param path pdm地址
@@ -39,7 +39,7 @@ public class PdmParser{
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * 获取属性值
 	 * @param attrName 属性名称
@@ -50,7 +50,7 @@ public class PdmParser{
 	}
 	/**
 	 * 获取内容
-	 * @return 
+	 * @return
 	 */
 	public String getText(){
 		return this.element.getText();
@@ -62,7 +62,7 @@ public class PdmParser{
 	public String getTextTrim(){
 		return this.element.getTextTrim();
 	}
-	
+
 	/**
 	 * 全文查找
 	 * @param elementName
@@ -76,16 +76,16 @@ public class PdmParser{
 			elements =  document.selectNodes(elementName).iterator();
 		else
 			elements = element.selectNodes(elementName).iterator();
-		
+
 		while (elements.hasNext()) {
 			rtn.add(new PdmParser((Element)elements.next()));
 		}
-		
+
 		if(rtn.isEmpty())
 			return null;
 		return rtn;
 	}
-	
+
 	/**
 	 * 获取子节点中第一个与节点名匹配的节点
 	 * @param elementName
@@ -96,7 +96,7 @@ public class PdmParser{
 			return new PdmParser(element.element(elementName));
 		return null;
 	};
-	
+
 	/**
 	 * 获取上级节点
 	 * @return
@@ -104,7 +104,7 @@ public class PdmParser{
 	public PdmParser getParent(){
 		return new PdmParser(element.getParent());
 	}
-	
+
 	/**
 	 * 根据名称获取上级节点
 	 * @param nodeName
@@ -116,15 +116,15 @@ public class PdmParser{
 				return new PdmParser(e);
 			}
 		}
-			
+
 		return null;
 	}
-	
+
 	public Element toElement(){
 		return element;
 	}
 	//TODO end
-	
+
 	/**
 	 * 获取子节点的内容
 	 * @param nodeName 字节点名称
@@ -135,7 +135,7 @@ public class PdmParser{
 			return null;
 		return element.elementTextTrim(nodeName);
 	}
-	
+
 	public PdmParser getDBMS(){
 		List<PdmParser> dbmes = find("//c:DBMS");
 		for (PdmParser dbms : dbmes) {
@@ -144,7 +144,7 @@ public class PdmParser{
 		}
 		return null;
 	}
-	
+
 	public String getDbmsName(){
 		List<PdmParser> dbmeNames = find("//c:DBMS//a:Name");
 		for (PdmParser dbmsName : dbmeNames) {
@@ -157,88 +157,88 @@ public class PdmParser{
 	public List<PdmParser> getAllPackages(){
 		return find("//c:Packages//o:Package");
 	}
-	
+
 	public List<PdmParser> getPackages(){
 		return find("c:Packages//o:Package");
 	}
-	
+
 	public List<PdmParser> getAllTables(){
 		return find("//c:Tables//o:Table");
 	}
-	
+
 	public List<PdmParser> getTables(){
 		return find("c:Tables//o:Table");
 	}
-	
+
 	public List<PdmParser> getAllColumns(){
 		return find("//c:Columns//o:Column");
 	}
-	
+
 	public List<PdmParser> getColumns(){
 		return find("c:Columns//o:Column");
 	}
-	
+
 	public List<PdmParser> getAllKeys(){
 		return find("//c:Keys//o:Key");
 	}
-	
+
 	public List<PdmParser> getKeys(){
 		return find("c:Keys//o:Key");
 	}
-	
-	
+
+
 	public List<PdmParser> getAllShortcut(){
 		return find("//c:Tables//o:Shortcut");
 	}
-	
+
 	public List<PdmParser> getShortcut(){
 		return find("c:Tables//o:Shortcut");
 	}
-	
+
 	public List<PdmParser> getAllRefs(){
 		return find("//c:References//o:Reference");
 	}
-	
+
 	public List<PdmParser> getRefs(){
 		return find("c:References//o:Reference");
 	}
-	
+
 	public String getId(){
 		String id = getChildText("Id");
 		if(id == null)
 			id = attr("Id");
 		return id;
 	}
-	
+
 	public String getName(){
 		return getChildText("Name");
 	}
-	
+
 	public String getCode(){
 		return getChildText("Code");
 	}
-	
+
 	public String getObjectId(){
 		return getChildText("ObjectID");
 	}
-	
+
 	public String getDataType(){
 		return getChildText("DataType");
 	}
-	
+
 	public String getLength(){
 		return getChildText("Length");
 	}
-	
+
 	public boolean isNotNull(){
 		String mandatory = getChildText("Column.Mandatory");
 		return (mandatory !=null && mandatory.trim().equals("1"))?true:false;
 	}
-	
+
 	public String getTargetId(){
 		return getChildText("TargetID");
 	}
-	
+
 	public String getCardinality(){
 		return getChildText("Cardinality");
 	}

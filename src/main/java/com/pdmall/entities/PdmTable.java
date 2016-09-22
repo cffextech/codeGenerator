@@ -12,7 +12,7 @@ public class PdmTable {
 	private List<PdmColumn> columns;
 	private List<PdmKey> keys;
 	private String dbms;
-	
+
 	public String getDbms() {
 		return dbms;
 	}
@@ -37,7 +37,7 @@ public class PdmTable {
 	public void setSid(String sid) {
 		this.sid = sid;
 	}
-	
+
 	public String getTableName() {
 		return tableName;
 	}
@@ -62,7 +62,7 @@ public class PdmTable {
 	public void setKeys(List<PdmKey> keys) {
 		this.keys = keys;
 	}
-	
+
 	public PdmKey getPdmKeyById(String id){
 		for (PdmKey key : getKeys()) {
 			if(key.getSid().equals(id))
@@ -70,7 +70,7 @@ public class PdmTable {
 		}
 		return null;
 	}
-	
+
 	public PdmColumn getPdmColumnById(String id){
 		for (PdmColumn pdmColumn : getColumns()) {
 			if (pdmColumn.getSid().equals(id))
@@ -78,7 +78,7 @@ public class PdmTable {
 		}
 		return null;
 	}
-	
+
 	public PdmColumn getPrimaryKey(){
 		Iterator<PdmColumn> cols = getColumns().iterator();
 		while(cols.hasNext()){
@@ -88,6 +88,6 @@ public class PdmTable {
 		}
 		return null;
 	}
-	
-	
+
+
 }

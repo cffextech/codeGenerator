@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+
+
+
 import com.pdmall.config.Config;
 import com.pdmall.entities.PdmColumn;
 import com.pdmall.entities.PdmKey;
@@ -12,19 +15,15 @@ import com.pdmall.entities.PdmRef;
 import com.pdmall.entities.PdmTable;
 import com.pdmall.parse.PdmParser;
 
-/*
-* 从build的属性文件中的pdm中构建pdm
-* pdm实体建造器
-* */
 public class PdmEntityBuilder {
-	
+
 	public static void main(String[] args) {
 		PdmEntityBuilder p = new PdmEntityBuilder();
 		List<PdmTable> pdmTables = p.parse();
 		System.out.println(pdmTables);
 		//
 	}
-	
+
 	public List<PdmTable> parse(){
 		List<PdmTable> pdmTables = new ArrayList<PdmTable>();
 		PdmParser parser = getDocument();
@@ -55,11 +54,11 @@ public class PdmEntityBuilder {
 			}
 			pdmTables.add(pdmTable);
 		}
-		
+
 		setReferences(pdmTables);
 		return pdmTables;
 	}
-	
+
 	public List<PdmRef> parseRefs(List<PdmTable> pdmTables){
 		List<PdmRef> pdmRefs = new ArrayList<PdmRef>();
 		List<PdmParser> parserRefList = getDocument().getAllRefs();
@@ -83,11 +82,12 @@ public class PdmEntityBuilder {
 		}
 		return pdmRefs;
 	}
-	
+
 	public PdmParser getDocument(){
-		return new PdmParser(Config.get("pdm.path"));
+		//return new PdmParser(Config.get("pdm.path"));
+		return new PdmParser("D:/2015/workspace/eclipse_workspace/PDMParser/_modules/platform/pdm/relationshipTest.pdm");
 	}
-	
+
 	public List<PdmColumn> buildPdmColumns(PdmParser parseTable){
 		List<PdmColumn> columns = new ArrayList<PdmColumn>();
 		List<PdmParser> pdmColsList =parseTable.getColumns();
@@ -96,7 +96,7 @@ public class PdmEntityBuilder {
 		Iterator<PdmParser> parseCols = pdmColsList.iterator();
 		while(parseCols.hasNext()){
 			PdmParser parseCol = parseCols.next();
-			
+
 			PdmColumn pdmColumn = new PdmColumn();
 			pdmColumn.setSid(parseCol.getId());
 			pdmColumn.setName(parseCol.getName());
@@ -106,12 +106,12 @@ public class PdmEntityBuilder {
 			pdmColumn.setNotNull(parseCol.isNotNull());
 			//
 			pdmColumn.setObjectID(parseCol.getObjectId());
-			
+
 			columns.add(pdmColumn);
 		}
 		return columns;
 	}
-	
+
 	public PdmPackage buildParentPackage(PdmParser parseTable){
 		PdmParser parsePackage = parseTable.getParentByNodeName("Package");
 		if(parsePackage == null)
@@ -122,7 +122,7 @@ public class PdmEntityBuilder {
 		pdmPackage.setPhysicsPath(getPackagePhysicsPath(parsePackage));
 		return pdmPackage;
 	}
-	
+
 	private String getPackagePhysicsPath(PdmParser parsePackage){
 		String path = parsePackage.getName();
 		PdmParser parser = parsePackage;
@@ -132,7 +132,7 @@ public class PdmEntityBuilder {
 		}
 		return path;
 	}
-	
+
 	public List<PdmKey> buildKeys(PdmParser parseTable){
 		List<PdmKey> pdmKeys = new ArrayList<PdmKey>();
 		List<PdmParser> pdmKeyList = parseTable.getKeys();
@@ -141,19 +141,19 @@ public class PdmEntityBuilder {
 		Iterator<PdmParser> parseKeysIt = parseTable.getKeys().iterator();
 		while (parseKeysIt.hasNext()) {
 			PdmParser parseKey = parseKeysIt.next();
-			
+
 			PdmKey pdmKey = new PdmKey();
 			pdmKey.setSid(parseKey.getId());
 			pdmKey.setName(parseKey.getName());
 			pdmKey.setCode(parseKey.getCode());
 			pdmKey.setColumnId(parseKey.child("Key.Columns").child("Column").attr("Ref"));
 			pdmKey.setObjectID(parseKey.getObjectId());
-			
+
 			pdmKeys.add(pdmKey);
 		}
 		return pdmKeys.isEmpty()?null:pdmKeys;
 	}
-	
+
 	private void setReferences(List<PdmTable> pdmTables){
 		List<PdmParser> parserRefList = getDocument().getAllRefs();
 		if(parserRefList == null)
@@ -165,31 +165,34 @@ public class PdmEntityBuilder {
 			String parentTabId = getRefTabId(parseRef.child("ParentTable"),pdmTables);
 			String childTabId = getRefTabId(parseRef.child("ChildTable"),pdmTables);
 			String childColId =parseRef.child("Joins").child("ReferenceJoin").child("Object2").child("Column").attr("Ref");
-			
-			
+
+
 			String[] refNames =  refName.split("\\|");
 			PdmTable parentTab = getPdmTableById(pdmTables,parentTabId);
 			PdmTable childTab = getPdmTableById(pdmTables,childTabId);
 			PdmColumn childCol = childTab.getPdmColumnById(childColId);
 			//set childRef
 			childCol.setParent(false);
-			childCol.setRefTable(parentTab);
+			//childCol.setRefTable(parentTab);
+			childCol.setRefTableId(parentTabId);
 			if(refNames.length>1)
 				childCol.setRefName(checkrefNameExists(childTab,refNames[0]));
 			//set parentRef
 			PdmColumn parentCol = new PdmColumn();
 			parentCol.setParent(true);
-			parentCol.setRefTable(childTab);
-			parentCol.setRefColumn(childCol);
+//			parentCol.setRefTable(childTab);
+//			parentCol.setRefColumn(childCol);
+			parentCol.setRefTableId(childTabId);
+			parentCol.setRefColumnId(childColId);
 			if(refNames.length>1)
 				parentCol.setRefName(checkrefNameExists(parentTab,refNames[1]));
 			else
 				checkChildTabExists(parentTab,childTab);
 			parentTab.getColumns().add(parentCol);
-			
+
 		}
 	}
-	
+
 	private String getRefTabId(PdmParser parseRef,List<PdmTable> pdmTables){
 		PdmParser parsetable = parseRef.child("Table");
 		if(parsetable != null)
@@ -199,7 +202,7 @@ public class PdmEntityBuilder {
 			return getRefTabIdWhenShortcut(parsetable,pdmTables);
 		return null;
 	}
-	
+
 	private String getRefTabIdWhenShortcut(PdmParser parsetable,List<PdmTable> pdmTables){
 		Iterator<PdmParser> parseShortcutsIt = getDocument().getAllShortcut().iterator();
 		while (parseShortcutsIt.hasNext()) {
@@ -214,19 +217,20 @@ public class PdmEntityBuilder {
 		}
 		return null;
 	}
-	
+
 	private void checkChildTabExists(PdmTable parentTab,PdmTable childTab){
 		Iterator<PdmColumn> parentCols = parentTab.getColumns().iterator();
 		while(parentCols.hasNext()){
 			PdmColumn parentCol = parentCols.next();
-			if(parentCol.getRefTable() == null || !parentCol.isParent())
-				continue;
-			if(parentCol.getRefTable().getTableCode().equals(childTab.getTableCode()))
-				if(parentCol.getRefName() == null)
-					throw new RuntimeException("duplicate childs field:["+childTab.getTableCode()+"]in table["+parentTab.getTableCode()+"]");
+//			if(parentCol.getRefTable() == null || !parentCol.isParent())
+//				continue;
+//			if(parentCol.getRefTable().getTableCode().equals(childTab.getTableCode()))
+//				if(parentCol.getRefName() == null)
+//					throw new RuntimeException("duplicate childs field:["+childTab.getTableCode()+"]in table["+parentTab.getTableCode()+"]");
+
 		}
 	}
-	
+
 	private String checkrefNameExists(PdmTable pdmTable,String refName){
 		Iterator<PdmColumn> cols = pdmTable.getColumns().iterator();
 		while(cols.hasNext()){
@@ -235,12 +239,12 @@ public class PdmEntityBuilder {
 				continue;
 			else if(col.getRefName().trim().equals(refName))
 				throw new RuntimeException("duplicate childs refName:["+refName+"]in table["+pdmTable.getTableCode()+"]");
-				
+
 		}
 		return refName;
 	}
-	
-	
+
+
 	//TODO 把List<PdmTable> 封装成容器以后这个方法就可以移到pdmTables里了
 	private PdmTable getPdmTableById(List<PdmTable> pdmTables,String sid){
 		for (PdmTable pdmTable : pdmTables) {

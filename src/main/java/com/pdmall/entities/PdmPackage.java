@@ -7,9 +7,9 @@ public class PdmPackage {
 	private String packageName;
 	private String PackageCode;
 	private List<PdmTable> pdmTables;
-	
-	
-	
+
+
+
 	public String getPhysicsPath() {
 		return physicsPath;
 	}
@@ -34,7 +34,7 @@ public class PdmPackage {
 	public void setPdmTables(List<PdmTable> pdmTables) {
 		this.pdmTables = pdmTables;
 	}
-	
-	
-	
+
+
+
 }

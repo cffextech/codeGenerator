@@ -11,7 +11,7 @@ public class PdmRef {
 	private String parentKeyId;
 	private String parentTableColumnId;
 	private String childTableColumnId;
-	
+
 	public String getSid() {
 		return sid;
 	}

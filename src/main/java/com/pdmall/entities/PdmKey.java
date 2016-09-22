@@ -7,7 +7,7 @@ public class PdmKey {
 	private String columnId;
 	private String objectID;
 	private boolean isPrimaryKey;
-	
+
 	public String getSid() {
 		return sid;
 	}
@@ -44,5 +44,5 @@ public class PdmKey {
 	public void setPrimaryKey(boolean isPrimaryKey) {
 		this.isPrimaryKey = isPrimaryKey;
 	}
-	
+
 }

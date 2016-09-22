@@ -13,17 +13,11 @@ public class PdmColumn {
 	//ref
 	private boolean isParent; //等于false时实体 上是对象类型,等于true时是set类型
 	private String refName;
-	private PdmTable refTable;
-	private PdmColumn refColumn;
-	
-	
-	
-	public PdmColumn getRefColumn() {
-		return refColumn;
-	}
-	public void setRefColumn(PdmColumn refColumn) {
-		this.refColumn = refColumn;
-	}
+	//	private PdmTable refTable;
+//	private PdmColumn refColumn;
+	private String refTableId;
+	private String refColumnId;
+
 	public String getSid() {
 		return sid;
 	}
@@ -66,7 +60,7 @@ public class PdmColumn {
 	public void setPrimaryKey(boolean isPrimaryKey) {
 		this.isPrimaryKey = isPrimaryKey;
 	}
-	
+
 	public String getObjectID() {
 		return objectID;
 	}
@@ -79,17 +73,23 @@ public class PdmColumn {
 	public void setParent(boolean isParent) {
 		this.isParent = isParent;
 	}
-	public PdmTable getRefTable() {
-		return refTable;
-	}
-	public void setRefTable(PdmTable refTable) {
-		this.refTable = refTable;
-	}
 	public String getRefName() {
 		return refName;
 	}
 	public void setRefName(String refName) {
 		this.refName = refName;
 	}
-	
+	public String getRefTableId() {
+		return refTableId;
+	}
+	public void setRefTableId(String refTableId) {
+		this.refTableId = refTableId;
+	}
+	public String getRefColumnId() {
+		return refColumnId;
+	}
+	public void setRefColumnId(String refColumnId) {
+		this.refColumnId = refColumnId;
+	}
+
 }

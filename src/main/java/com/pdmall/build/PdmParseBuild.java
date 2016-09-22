@@ -18,12 +18,12 @@ import com.pdmall.entities.PdmPackage;
 import com.pdmall.entities.PdmTable;
 @Deprecated
 public class PdmParseBuild {
-	
+
 	public static void main(String[] args) {
 		PdmParseBuild p = new PdmParseBuild();
 		p.parse();
 	}
-	
+
 	public List<PdmTable> parse(){
 		List<PdmTable> pdmTables = new ArrayList<PdmTable>();
 		Document doc = readPdm(Config.get("pdm.path"));
@@ -39,7 +39,7 @@ public class PdmParseBuild {
 		setReferences(doc,pdmTables);
 		return pdmTables;
 	}
-	
+
 	private List<PdmTable> getPdmTables(Element saxPackage,PdmPackage pdmPackage){
 		List<PdmTable> pdmTables = new ArrayList<PdmTable>();
 		Iterator saxTables = saxPackage.selectNodes("c:Tables//o:Table").iterator();
@@ -60,18 +60,18 @@ public class PdmParseBuild {
 			PdmKey pk = pdmTable.getPdmKeyById(pkId);
 			if(pk!=null)
 				pdmTable.getPdmColumnById(pk.getColumnId()).setPrimaryKey(true);
-			
+
 			pdmTables.add(pdmTable);
 		}
 		return pdmTables;
 	}
-	
+
 	private List<PdmColumn> getPdmColumns(Element saxTable){
 		List<PdmColumn> pdmColumns = new ArrayList<PdmColumn>();
 		Iterator saxColumns = saxTable.selectNodes("c:Columns//o:Column").iterator();
 		while (saxColumns.hasNext()) {
 			Element saxColumn = (Element)saxColumns.next();
-			
+
 			PdmColumn pdmColumn = new PdmColumn();
 			pdmColumn.setSid(saxColumn.attributeValue("Id"));
 			pdmColumn.setName(saxColumn.elementTextTrim("Name"));
@@ -79,31 +79,31 @@ public class PdmParseBuild {
 			pdmColumn.setDataType(saxColumn.elementTextTrim("DataType"));
 			pdmColumn.setLength(saxColumn.elementTextTrim("Length"));
 			pdmColumn.setNotNull(saxColumn.elementTextTrim("Mandatory")!=null?true:false);
-			
+
 			pdmColumns.add(pdmColumn);
 		}
-		
+
 		return pdmColumns;
 	}
-	
+
 	private List<PdmKey> getPdmKeys(Element saxTable){
 		List<PdmKey> pdmKeys = new ArrayList<PdmKey>();
 		Iterator saxKeys = saxTable.selectNodes("c:Keys//o:Key").iterator();
 		while(saxKeys.hasNext()){
 			Element saxKey = (Element) saxKeys.next();
-			
+
 			PdmKey pdmKey = new PdmKey();
 			pdmKey.setSid(saxKey.attributeValue("Id"));
 			pdmKey.setName(saxKey.elementTextTrim("Name"));
 			pdmKey.setCode(saxKey.elementTextTrim("Code"));
 			pdmKey.setColumnId(saxKey.element("Key.Columns").element("Column").attributeValue("Ref"));
-			
+
 			pdmKeys.add(pdmKey);
 		}
 		return pdmKeys;
-		
+
 	}
-	
+
 	private void setReferences(Document doc,List<PdmTable> pdmTables){
 		Iterator saxRefs = doc.selectNodes("//c:References//o:Reference").iterator();
 		while(saxRefs.hasNext()){
@@ -112,28 +112,28 @@ public class PdmParseBuild {
 			String parentTabId = getRefTabId(saxRef.element("ParentTable"),doc,pdmTables);
 			String childTabId = getRefTabId(saxRef.element("ChildTable"),doc,pdmTables);
 			String childColId =saxRef.element("Joins").element("ReferenceJoin").element("Object2").element("Column").attributeValue("Ref");
-			
-			
+
+
 			String[] refNames =  refName.split("\\|");
 			PdmTable parentTab = getPdmTableById(pdmTables,parentTabId);
 			PdmTable childTab = getPdmTableById(pdmTables,childTabId);
 			PdmColumn childCol = childTab.getPdmColumnById(childColId);
 			//set childRef
 			childCol.setParent(false);
-			childCol.setRefTable(parentTab);
+			childCol.setRefTableId(parentTabId);
 			if(refNames.length>1)
 				childCol.setRefName(refNames[0]);
 			//set parentRef
 			PdmColumn parentCol = new PdmColumn();
 			parentCol.setParent(true);
-			parentCol.setRefTable(childTab);
+			parentCol.setRefTableId(childTabId);
 			if(refNames.length>1)
 				parentCol.setRefName(refNames[1]);
 			parentTab.getColumns().add(parentCol);
-			
+
 		}
 	}
-	
+
 	private String getRefTabId(Element saxRefTab,Document doc,List<PdmTable> pdmTables){
 		Element table = saxRefTab.element("Table");
 		if(table != null)
@@ -151,7 +151,7 @@ public class PdmParseBuild {
 		}
 		return null;
 	}
-	
+
 	private Element getSaxShortCatById(String id ,Document doc){
 		Iterator saxShortCats = doc.selectNodes("//c:Tables//o:Shortcut").iterator();
 		while (saxShortCats.hasNext()) {
@@ -162,8 +162,8 @@ public class PdmParseBuild {
 		}
 		return null;
 	}
-	
-	
+
+
 	private PdmTable getPdmTableById(List<PdmTable> pdmTables,String sid){
 		for (PdmTable pdmTable : pdmTables) {
 			if(pdmTable.getSid().equals(sid))
@@ -171,8 +171,8 @@ public class PdmParseBuild {
 		}
 		return null;
 	}
-	
-	
+
+
 	private Document readPdm(String path){
 		if(path == null || path.isEmpty())
 			throw new RuntimeException("path is invalid:"+path);
