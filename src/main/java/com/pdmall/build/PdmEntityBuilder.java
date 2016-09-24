@@ -17,6 +17,7 @@ import com.pdmall.parse.PdmParser;
 
 public class PdmEntityBuilder {
 
+    private String path;
 	public static void main(String[] args) {
 		PdmEntityBuilder p = new PdmEntityBuilder();
 		List<PdmTable> pdmTables = p.parse();
@@ -24,9 +25,19 @@ public class PdmEntityBuilder {
 		//
 	}
 
+    public PdmEntityBuilder(){
+        this.path=path;
+    }
+
+	public PdmEntityBuilder(String path){
+        this.path=path;
+    }
+
+
 	public List<PdmTable> parse(){
 		List<PdmTable> pdmTables = new ArrayList<PdmTable>();
-		PdmParser parser = getDocument();
+        PdmParser parser = getDocument(path);
+		//PdmParser parser = getDocument();
 		Iterator<PdmParser> parseTableIt = parser.getAllTables().iterator();
 		while (parseTableIt.hasNext()) {
 			PdmParser parseTable= parseTableIt.next();
@@ -61,7 +72,8 @@ public class PdmEntityBuilder {
 
 	public List<PdmRef> parseRefs(List<PdmTable> pdmTables){
 		List<PdmRef> pdmRefs = new ArrayList<PdmRef>();
-		List<PdmParser> parserRefList = getDocument().getAllRefs();
+		//List<PdmParser> parserRefList = getDocument().getAllRefs();
+        List<PdmParser> parserRefList = getDocument(path).getAllRefs();
 		if(parserRefList == null)
 			return null;
 		Iterator<PdmParser> parseRefIt = parserRefList.iterator();
@@ -83,9 +95,16 @@ public class PdmEntityBuilder {
 		return pdmRefs;
 	}
 
+	public PdmParser getDocument(String path){
+        return new PdmParser(path);
+    }
+
 	public PdmParser getDocument(){
 		//return new PdmParser(Config.get("pdm.path"));
-		return new PdmParser("D:/2015/workspace/eclipse_workspace/PDMParser/_modules/platform/pdm/relationshipTest.pdm");
+        return new PdmParser("E:/Projects/codeGenerationDemo/" +
+        "/code_generator/examples/data-source/pdm/relationshipTest.pdm");
+/*		return new PdmParser("E:/Projects/codeGenerationDemo/" +
+				"/code_generator/接口/relationshipTest.pdm");*/
 	}
 
 	public List<PdmColumn> buildPdmColumns(PdmParser parseTable){
@@ -155,7 +174,8 @@ public class PdmEntityBuilder {
 	}
 
 	private void setReferences(List<PdmTable> pdmTables){
-		List<PdmParser> parserRefList = getDocument().getAllRefs();
+		//List<PdmParser> parserRefList = getDocument().getAllRefs();
+        List<PdmParser> parserRefList = getDocument(path).getAllRefs();
 		if(parserRefList == null)
 			return;
 		Iterator<PdmParser> parseRefIt = parserRefList.iterator();

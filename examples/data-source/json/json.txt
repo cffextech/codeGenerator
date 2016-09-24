@@ -37,13 +37,6 @@
 					"parent":false,
 					"primaryKey":false,
 					"sid":"o12"
-				},
-				{
-					"notNull":false,
-					"parent":true,
-					"primaryKey":false,
-					"refColumnId":"o15",
-					"refTableId":"o10"
 				}
 			],
 			"dbms":"MySQL 5.0",
@@ -53,7 +46,8 @@
 					"columnId":"o11",
 					"name":"Key_1",
 					"objectID":"3C765FE1-2FD8-4731-BAB8-1859112A93E4",
-					"primaryKey":true,"sid":"o13"
+					"primaryKey":true,
+					"sid":"o13"
 				}
 			],
 			"objectId":"B97514D1-0630-4F44-8C88-D3368CF2D834",

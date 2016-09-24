@@ -40,15 +40,15 @@ public class Util {
         String[] dataFileNameArray=dataFileName.split(tplFileNameRegExp);
         String[] tplFileNameArray=tplFileName.split(tplFileNameRegExp);
         String outfileName="";
-        if(tplFileNameArray.length>1){
+        if(tplFileNameArray.length>=1){
             outfileName+=tplFileNameArray[0];
         }
         outfileName+="_";
-        if(dataFileNameArray.length>1){
+        if(dataFileNameArray.length>=1){
             outfileName+=dataFileNameArray[0];
         }
         outfileName+=".";
-        if(tplFileNameArray.length>2){
+        if(tplFileNameArray.length>=2){
             outfileName+=tplFileNameArray[1];
         }
         return outfileName;

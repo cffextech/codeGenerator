@@ -1,5 +1,15 @@
 package command;
 
+import com.cffex.pdm.JsonGenerator;
+import com.cffex.pdm.PdmGenerator;
+import com.pdmall.build.PdmEntityBuilder;
+import com.pdmall.entities.PdmRef;
+import com.pdmall.entities.PdmTable;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by lzy on 2016/8/30.
  */
@@ -28,25 +38,44 @@ public class Main {
 /*        for (int i = 0; i < args.length; i++) {
             System.out.println("args[" + i + "] is <" + args[i] + ">");
         }*/
-        if(args.length<3){
+/*        if(args.length<3){
             System.out.println("command should be: " +
                     "java -jar codeGenerationDemo.jar " +
                     "\"templateDirectory\"," +
-                    "\"dataDirectory\"," +
+                    "\"pdmDirectory\"," +
                     "\"outDirectory\"");
             return;
+        }*/
+        String dataDirectory="E:/Projects/codeGenerationDemo/" +
+                "/code_generator/examples/data-source/pdm/";
+
+        String templateDirectory="E:/Projects/codeGenerationDemo/code_generator/examples/templates/sql/";
+        String outDirectory="E:/Projects/codeGenerationDemo/code_generator/examples/output/";
+        //判断文件类型的操作,是pdm文件还是json文件,先假定都是pdm文件
+
+
+        CodeGenerator runner=new CodeGenerator(templateDirectory,dataDirectory,outDirectory);
+
+        ArrayList<String> dataFilenames = new ArrayList<String>();
+        IO.getAllFileName("", dataDirectory, dataFilenames);
+        for (String dataFile : dataFilenames) {
+            PdmEntityBuilder p = new PdmEntityBuilder(dataDirectory + dataFile);
+            List<PdmTable> pdmTables = p.parse();
+            List<PdmRef> pdmRefs = p.parseRefs(pdmTables);
+            JsonGenerator jsonGenerator = new JsonGenerator(pdmTables, pdmRefs);
+            String model=jsonGenerator.generate();
+            System.out.println(model);
+
+            ArrayList<String> tplFilenames = new ArrayList<String>();
+            IO.getAllFileName("", templateDirectory, tplFilenames);
+            for (String j : tplFilenames){
+                runner.generateCode(model,j,outDirectory);
+            }
         }
-        CodeGenerator runner=new CodeGenerator(args[0],args[1],args[2]);
-        runner.execute();
-        System.out.println("The task of code generation is finished!");
-        //2.模板集合和数据源集合
-/*        Scanner cin = new Scanner(System.in);
 
-        int a = cin.nextInt(), b = cin.nextInt();
-        System.out.println(a + b);
-
-        CodeGenerator cg=new CodeGenerator();
-        System.out.println(cg.printDemo("Hello World"));*/
+        //CodeGenerator runner=new CodeGenerator(args[0],args[1],args[2]);
+        //runner.execute();
+        //System.out.println("The task of code generation is finished!");
 
         /*
         * TODO:程序配置化的研究
