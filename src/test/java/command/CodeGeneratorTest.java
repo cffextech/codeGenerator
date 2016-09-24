@@ -1,5 +1,6 @@
 package command;
 
+import engine.action.CodeGenerator;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -34,11 +35,11 @@ public class CodeGeneratorTest {
 
 /*        FileInputStream data=new FileInputStream(
                 "E:\\代码生成器测试\\examples\\data-source\\data.json");
-        FileInputStream template=new FileInputStream(
+        FileInputStream CodeTemplate=new FileInputStream(
                 "E:\\代码生成器测试\\examples\\templates\\test2.ftl");
         FileOutputStream out=new FileOutputStream(
                 "E:\\代码生成器测试\\examples\\output\\out1.json");
-        codeGenerator.generateCode(data,template,out);*/
+        codeGenerator.generateCode(data,CodeTemplate,out);*/
 
 /*        FileOutputStream t1=new FileOutputStream(
                 "E:\\Projects\\codeGenerationDemo\\examples\\output\\test.json");*/

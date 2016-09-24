@@ -6,5 +6,5 @@
         "name"
     ],
     "owner": "lzy",
-    "type": "entity"
+    "type": "engine.dao.entity"
 }
