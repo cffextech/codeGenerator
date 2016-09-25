@@ -17,11 +17,17 @@ import java.util.List;
  * Created by lzy on 2016/9/24.
  */
 public class FreeMakerCodeGenerator extends CodeGenerator{
-
+/*
+* TODO 模板引擎类应该是单例的
+* */
     public Configuration cfg;
     public String tplDirectory;
 
     public FreeMakerCodeGenerator(String tplDirectory) {
+        /*
+        * TODO-new 增加文件路径验证，程序的鲁棒性不是很好
+        * */
+        this.cfg = new Configuration(Configuration.VERSION_2_3_23);
         this.tplDirectory = tplDirectory;
         try {
             cfg.setDirectoryForTemplateLoading(new File(tplDirectory));
@@ -50,10 +56,12 @@ public class FreeMakerCodeGenerator extends CodeGenerator{
                 for(DataModel model:models){
                     String outFileName = StringUtil.generateOutfileName(model.getName(), tpl.getName());
                     try {
+                        //创建子目录
+                        outFileName = StringUtil.verifyFileName(outputDirectory + outFileName);
                         Writer out = new OutputStreamWriter(
-                                new FileOutputStream(outputDirectory + outFileName)
+                                new FileOutputStream(outFileName)
                         );
-
+                        
                         try {
                             FMtpl.process(model.getContent(), out);
                         } catch (TemplateException e) {

@@ -71,3 +71,29 @@
 * 模板引擎：freemarker,velocity,artTemplate...  支持多模板引擎
 * 数据集：元数据,css格式数据,数据信息(展示页和详情页)
 * 程序的展现方式：网站,app,desktop程序,IDE插件,框架插件
+
+##重构需求迭代
+* 两种需求：
+	有时候要生成一个文件，生成的粒度不一样；
+	一个pdm--->可以对应一个文件，也可以对应多个文件，使用build.propertiry来判定
+	输出的文件名也不是一种方式：
+	1、例如想要取名为模型名的；
+	2、还有自定义名字的；
+	3、等等；
+	4、还要打包成一个压缩包的
+* 语言之间的区别：
+	数据类型的区别：int<--->bigint
+	命名方式的区别：驼峰，匈牙利，Pascal的命名方式
+
+##重构代码迭代
+* 设计模式：
+	工厂模式
+* 模板文件：
+    Spring的几种文件形式
+    
+##命令行运行例子
+java -jar codeGenerationDemo.jar "E:\\Projects\\codeGenerationDemo\\code_generator\\examples\\model\\hybrid\\" "E:\\Projects\\codeGenerationDemo\\code_generator\\examples\\template\\"  "E:\\Projects\\codeGenerationDemo\\code_generator\\examples\\output\\"
+
+##入口主类
+entry.Runner
+	

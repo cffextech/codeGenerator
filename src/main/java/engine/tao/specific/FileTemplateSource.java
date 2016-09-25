@@ -22,17 +22,19 @@ public class FileTemplateSource extends TemplateSource{
     public List<CodeTemplate> getTemplate() {
         List<String> fileNames=new ArrayList<String>();
         if(new File(tplAddress).isDirectory()){
-            FileUtil.getAllFileName(tplAddress,fileNames);
+            FileUtil.getAllFileName("", tplAddress, fileNames);
         }else {
-            fileNames.add(tplAddress);
+            int i=tplAddress.lastIndexOf('\\');
+            fileNames.add(tplAddress.substring(i+1));
+            tplAddress=tplAddress.substring(0,i);
         }
 
-        List<CodeTemplate> dmList=new ArrayList();
+        List<CodeTemplate> tplList=new ArrayList();
         for(String fname:fileNames){
             CodeTemplate ct=new CodeTemplate();
             ct.setName(fname);
-            dmList.add(ct);
+            tplList.add(ct);
         }
-        return dmList;
+        return tplList;
     }
 }

@@ -44,7 +44,7 @@ public class FileUtil {
 /*
 * 带目录的文件名:相对路径的文件名
 * */
-    public static void getAllFileName(String Directory, String path, ArrayList<String> fileName)
+    public static void getAllFileName(String Directory, String path, List<String> fileName)
     {
         File [] files = (new File(path)).listFiles();
         for(File a:files) {

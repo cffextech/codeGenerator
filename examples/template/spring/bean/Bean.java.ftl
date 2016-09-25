@@ -15,7 +15,7 @@ public class ${tableName?cap_first} implements Serializable{
     </#list>
 
     <#list columns as column>
-        <#if columnjava.dataType??>
+        <#if column.dataType??>
             <#if column.name??>
 
         public void set${column.name}(<#if column.dataType=="bigint">int<#elseif column.dataType?starts_with("varchar")>String<#else>${column.dataType}</#if> ${column.name?cap_first}){

@@ -28,7 +28,7 @@ public class JsonModelSource extends ModelSource {
         /*
         * TODO-upgrade 要适合正则表达式
         * */
-        dm.setName(address.substring(address.lastIndexOf('/')));
+        dm.setName(address.substring(address.lastIndexOf('\\')+1));
         dm.setContent(root);
         dmList.add(dm);
         return dmList;

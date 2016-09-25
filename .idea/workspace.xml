@@ -1,56 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="codeGenerationDemo:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/main/java/engine/action/CodeGenerator.java" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c3af144-7074-4056-8518-68eaf80427d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/action/CodeGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/action/specific/FreeMakerCodeGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/ModelSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/specific/HttpModelSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/specific/JsonModelSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/specific/MongoModelSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/specific/PdmModelSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/tao/TemplateSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/engine/tao/specific/FileTemplateSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/entry/Runner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/CodeTemplate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/DataModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/constants/AddressType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/model/package-info.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/backup/CodeGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/backup/JunitTestTpl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/command/CodeGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/command/Main.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extjar/dom4j-1.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extjar/jaxen-1.1-beta-9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/action/CodeGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/action/specific/FreeMakerCodeGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/ModelSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/driver/MongoDBJDBC$Model.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/driver/MongoDBJDBC.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/cffex/pdm/JsonGenerator.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/cffex/pdm/PdmTemplate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/handler/FileHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/handler/StringUtilHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/build/PdmEntityBuilder.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/build/PdmParseBuild.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/entities/PdmTable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/test/Test.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/specific/HttpModelSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/specific/JsonModelSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/specific/MongoModelSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/dao/specific/PdmModelSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/tao/TemplateSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/engine/tao/specific/FileTemplateSource.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/entry/Runner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/model/CodeTemplate.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/model/DataModel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/model/constants/AddressType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/util/FileUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/util/StringUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/command/FileStringUtilTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/command/StringUtilTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/entry/RunnerTest.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cffex/pdm/JsonGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cffex/pdm/PdmTemplate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/handler/FileHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/handler/StringUtilHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/build/PdmEntityBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/build/PdmParseBuild.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/entities/PdmTable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/generate/CodeGenerater.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/generate/HbmGenerater.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/generate/JavaGenerater.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/test/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/test/Test1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/command/CodeGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/command/IO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/command/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/command/Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dao/MongoDBJDBC$Model.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dao/MongoDBJDBC.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/command/CodeGeneratorTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/command/IOTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/command/UtilTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/codeGenerationDemo_jar/codeGenerationDemo.jar" afterPath="$PROJECT_DIR$/out/artifacts/codeGenerationDemo_jar/codeGenerationDemo.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/codeGenerationDemo_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/codeGenerationDemo_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/backup/json/employee.json" afterPath="$PROJECT_DIR$/examples/backup/json/employee.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/build.properties" afterPath="$PROJECT_DIR$/src/main/resources/build.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeGenerationDemo.iml" afterPath="$PROJECT_DIR$/codeGenerationDemo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/model/hybrid/json.txt" afterPath="$PROJECT_DIR$/examples/model/hybrid/json.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/model/pdm/test.pdm" afterPath="$PROJECT_DIR$/examples/model/pdm/test.pdm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/template/allJson.json.ftl" afterPath="$PROJECT_DIR$/examples/template/allJson.json.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/template/html/modelTable.html.ftl" afterPath="$PROJECT_DIR$/examples/template/html/modelTable.html.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/template/spring/bean/Bean.java.ftl" afterPath="$PROJECT_DIR$/examples/template/spring/bean/Bean.java.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/template/spring/service/Service.java.ftl" afterPath="$PROJECT_DIR$/examples/template/spring/service/Service.java.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/template/sql/dll.sql.ftl" afterPath="$PROJECT_DIR$/examples/template/sql/dll.sql.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/engine/action/specific/FreeMakerCodeGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/engine/action/specific/FreeMakerCodeGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/engine/dao/specific/JsonModelSource.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/specific/JsonModelSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/engine/dao/specific/PdmModelSource.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/specific/PdmModelSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/engine/tao/specific/FileTemplateSource.java" afterPath="$PROJECT_DIR$/src/main/java/engine/tao/specific/FileTemplateSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/entry/Runner.java" afterPath="$PROJECT_DIR$/src/main/java/entry/Runner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/constants/AddressType.java" afterPath="$PROJECT_DIR$/src/main/java/model/constants/AddressType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/util/FileUtil.java" afterPath="$PROJECT_DIR$/src/main/java/util/FileUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/util/StringUtil.java" afterPath="$PROJECT_DIR$/src/main/java/util/StringUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/command/CodeGeneratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/command/CodeGeneratorTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cffex/pdm/JsonGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/cffex/pdm/JsonGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cffex/pdm/PdmGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/cffex/pdm/PdmGenerator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/cffex/pdm/PdmTemplate.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/cffex/pdm/PdmTemplate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/handler/FileHandler.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/handler/FileHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/handler/StringUtilHandler.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/handler/StringUtilHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/handler/XmlParser.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/handler/XmlParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/build/PdmEntityBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/build/PdmEntityBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/build/PdmParseBuild.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/build/PdmParseBuild.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/config/Config.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/config/Config.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/entities/PdmColumn.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/entities/PdmColumn.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/entities/PdmKey.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/entities/PdmKey.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/entities/PdmPackage.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/entities/PdmPackage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/entities/PdmRef.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/entities/PdmRef.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/entities/PdmTable.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/entities/PdmTable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/generate/constants/GenerateConst.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/generate/constants/GenerateConst.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/parse/PdmParser.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/parse/PdmParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/pdmall/test/Test.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/test/Test.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/command/IO.java" afterPath="$PROJECT_DIR$/src/main/java/util/FileUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/command/Util.java" afterPath="$PROJECT_DIR$/src/main/java/util/StringUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dao/MongoDBJDBC.java" afterPath="$PROJECT_DIR$/src/main/java/engine/dao/driver/MongoDBJDBC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/command/IOTest.java" afterPath="$PROJECT_DIR$/src/test/java/command/FileStringUtilTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/command/UtilTest.java" afterPath="$PROJECT_DIR$/src/test/java/command/StringUtilTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/entry/RunnerTest.java" afterPath="$PROJECT_DIR$/src/test/java/entry/RunnerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/build.properties" afterPath="$PROJECT_DIR$/target/classes/build.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/cffex/pdm/PdmGenerator$Position.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/cffex/pdm/PdmGenerator$Position.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/cffex/pdm/PdmGenerator.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/cffex/pdm/PdmGenerator.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/handler/XmlParser.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/handler/XmlParser.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/config/Config.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/config/Config.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/entities/PdmColumn.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/entities/PdmColumn.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/entities/PdmKey.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/entities/PdmKey.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/entities/PdmPackage.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/entities/PdmPackage.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/entities/PdmRef.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/entities/PdmRef.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/generate/constants/GenerateConst.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/generate/constants/GenerateConst.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/classes/com/pdmall/parse/PdmParser.class" afterPath="$PROJECT_DIR$/target/classes/engine/dao/pdm/pdmall/parse/PdmParser.class" />
     </list>
     <list id="d1dc7163-aeeb-4782-908d-2a93f8792d27" name="Rejected commit: Default" comment="" />
     <ignored path="codeGenerationDemo.iws" />
@@ -66,6 +109,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/code_generator$Runner.coverage" NAME="Runner Coverage Results" MODIFIED="1474770635529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>entry.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/codeGenerationDemo$CodeGeneratorTest.coverage" NAME="CodeGeneratorTest Coverage Results" MODIFIED="1472547440158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>my.*</FILTER>
     </SUITE>
@@ -87,31 +133,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HttpModelSource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/specific/HttpModelSource.java">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entry/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="370">
+              <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1221#1229#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/DataModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="244">
+                <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/engine/action/CodeGenerator.java">
+      <file leaf-file-name="AddressType.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/constants/AddressType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="38">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,10 +174,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="package-info" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -146,26 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/examples/templates/test1/test.json.ftl" />
-        <option value="$PROJECT_DIR$/examples/templates/bean/test.bean.ftl" />
-        <option value="$PROJECT_DIR$/examples/templates/html/modelTable.html.ftl" />
-        <option value="$PROJECT_DIR$/examples/templates/spring/repository/basicRepository.java.ftl" />
-        <option value="$PROJECT_DIR$/examples/data-source/json.txt" />
-        <option value="$PROJECT_DIR$/examples/backup/json.txt" />
-        <option value="$PROJECT_DIR$/examples/data-source/test1/json.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/command/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/command/Util.java" />
-        <option value="$PROJECT_DIR$/examples/output/dll_course.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cffex/pdm/JsonGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/command/CodeGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pdmall/build/PdmEntityBuilder.java" />
-        <option value="$PROJECT_DIR$/examples/templates/sql/dll.sql.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/template.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/CodeTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/driver/MongoDBJDBC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/IO.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DataSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/specific/JSONDataSource.java" />
@@ -174,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/main/java/action/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/action/specific/FreeMakerCodeGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/entry/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/entry/Ruuner.java" />
         <option value="$PROJECT_DIR$/src/main/java/tao/TemplateSource.java" />
@@ -182,21 +213,42 @@
         <option value="$PROJECT_DIR$/src/main/java/model/constants/ModelAddress.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/constants/AddresTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/constants/AddresType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/constants/AddressType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/engine/dao/ModelSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/engine/dao/specific/MongoModelSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/engine/dao/specific/HttpModelSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/engine/action/CodeGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/engine/tao/TemplateSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/engine/tao/specific/FileTemplateSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/engine/action/specific/FreeMakerCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/engine/dao/specific/JsonModelSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/engine/dao/specific/PdmModelSource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entry/Runner.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/CodeTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/DataModel.java" />
+        <option value="$PROJECT_DIR$/examples/model/hybrid/json.txt" />
+        <option value="$PROJECT_DIR$/examples/model/hybrid/course.json" />
+        <option value="$PROJECT_DIR$/examples/model/json/multiTables.json" />
+        <option value="$PROJECT_DIR$/examples/model/json/json.txt" />
+        <option value="$PROJECT_DIR$/examples/model/hybrid/illFormed.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/command/CodeGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/dao/specific/PdmModelSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/action/specific/FreeMakerCodeGenerator.java" />
+        <option value="$PROJECT_DIR$/examples/output/allJson_course.json" />
+        <option value="$PROJECT_DIR$/src/main/java/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/tao/specific/FileTemplateSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/engine/dao/specific/JsonModelSource.java" />
+        <option value="$PROJECT_DIR$/examples/template/html/modelTable.html.ftl" />
+        <option value="$PROJECT_DIR$/examples/output/basicBean_chapter.java" />
+        <option value="$PROJECT_DIR$/examples/output/basicBean_course.java" />
+        <option value="$PROJECT_DIR$/examples/template/spring/bean/basicBean.java.ftl" />
+        <option value="$PROJECT_DIR$/examples/template/allJson.json.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/model/constants/AddressType.java" />
+        <option value="$PROJECT_DIR$/examples/template/spring/dao/basicRepository.java.ftl" />
+        <option value="$PROJECT_DIR$/examples/template/spring/bean/basicBean.java.txt" />
+        <option value="$PROJECT_DIR$/examples/template/spring/dao/basicRepository.java.txt" />
+        <option value="$PROJECT_DIR$/examples/template/spring/service/Service.java.ftl" />
+        <option value="$PROJECT_DIR$/examples/template/spring/service/Service.java.txt" />
+        <option value="$PROJECT_DIR$/examples/template/spring/bean/Bean.java.ftl" />
+        <option value="$PROJECT_DIR$/examples/template/sql/dll.sql.ftl" />
+        <option value="$PROJECT_DIR$/src/test/java/entry/RunnerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entry/Runner.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -219,8 +271,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1370" />
+    <option name="x" value="-6" />
+    <option name="width" value="1369" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -248,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -278,308 +329,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="specific" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="specific" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="specific" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code_generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -587,6 +336,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -602,18 +352,19 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="E:/备份" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extjar/dom4j-1.6.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="entry" />
       <recent name="my" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\data-source\pdm" />
       <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\backup" />
-      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\data-source\json" />
-      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\backup\json" />
-      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\backup\pdm" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\template\spring\dao" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\model\hybrid\pdm" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\model\hybrid" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\data-source\pdm" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="my" />
@@ -622,34 +373,14 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\备份" />
-      <recent name="E:\Projects\codeGenerationDemo" />
-      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\data-source\test1" />
-      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\backup" />
-      <recent name="E:\Projects\codeGenerationDemo\src\main\resources" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\model\hybrid" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\model\json" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\model\pdm" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\model\hybrid\json" />
+      <recent name="E:\Projects\codeGenerationDemo\code_generator\examples\model\hybrid\pdm" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Runner">
-    <configuration default="false" name="MongoDBJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="engine.dao.driver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="engine.dao.driver.MongoDBJDBC" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="codeGenerationDemo" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.RunnerTest.generateCode">
     <configuration default="false" name="PdmGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -734,6 +465,32 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="codeGenerationDemo" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RunnerTest.generateCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="entry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="codeGenerationDemo" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="entry" />
+      <option name="MAIN_CLASS_NAME" value="entry.RunnerTest" />
+      <option name="METHOD_NAME" value="generateCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1196,19 +953,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MongoDBJDBC" />
-      <item index="1" class="java.lang.String" itemvalue="Application.PdmGenerator" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Test.testPdmParser" />
-      <item index="3" class="java.lang.String" itemvalue="Application.JsonGenerator" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Runner" />
+      <item index="0" class="java.lang.String" itemvalue="Application.PdmGenerator" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Test.testPdmParser" />
+      <item index="2" class="java.lang.String" itemvalue="Application.JsonGenerator" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Runner" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RunnerTest.generateCode" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
-        <item index="1" class="java.lang.String" itemvalue="Application.JsonGenerator" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Test.testPdmParser" />
-        <item index="3" class="java.lang.String" itemvalue="Application.PdmGenerator" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MongoDBJDBC" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RunnerTest.generateCode" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Runner" />
+        <item index="2" class="java.lang.String" itemvalue="Application.JsonGenerator" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Test.testPdmParser" />
+        <item index="4" class="java.lang.String" itemvalue="Application.PdmGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -1253,75 +1010,76 @@
       <workItem from="1474592088552" duration="19837000" />
       <workItem from="1474695940615" duration="25000" />
       <workItem from="1474696070710" duration="21345000" />
-      <workItem from="1474727452630" duration="3515000" />
+      <workItem from="1474727452630" duration="16339000" />
+      <workItem from="1474787543975" duration="21134000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 20m 31s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 51m 51s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 24m 10s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 53m 16s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 24m 37s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 53m 36s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 25m 01s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 53m 48s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 25m 19s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 54m 03s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 29m 15s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 55m 17s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 29m 22s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 55m 56s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 30m 18s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 21h 56m 08s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 31m 48s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 22h 34m 38s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test_testPdmParser - 2016.09.21 at 21h 33m 02s.xml">
-      <configuration name="Test.testPdmParser" configurationId="JUnit" />
+    <history-entry file="RunnerTest_generateCode - 2016.09.25 at 22h 35m 28s.xml">
+      <configuration name="RunnerTest.generateCode" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188458000" />
+    <option name="totallyTimeSpent" value="222416000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="0" width="1369" height="735" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31772575" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3188406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38808373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.583612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39297658" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30502215" sideWeight="0.4868421" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34835753" sideWeight="0.4868421" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2742475" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3441755" sideWeight="0.5131579" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41384864" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3188406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900763" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1368,7 +1126,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="38" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/engine/action/specific/FreeMakerCodeGenerator.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1377,266 +1143,29 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/codeGenerationDemo.iml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/CodeTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/backup/json/json.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/backup/ftl/tabledll_sql.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/cffex/pdm/PdmTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/build/PdmParseBuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/templates/allJson.json.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/cffex/pdm/PdmGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/outputdll_.sql" />
-    <entry file="file://$PROJECT_DIR$/examples/output/dll_.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/build/PdmEntityBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/data-source/pdm/relationshipTest.pdm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/output/dll_chapter.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/templates/html/modelTable.html.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/output/dll_course.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/templates/spring/bean/basicBean.java.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/templates/spring/repository/basicRepository.java.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/parse/PdmParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/data-source/json/json.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/cffex/pdm/JsonGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/templates/sql/dll.sql.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/backup/CodeGenerator.java" />
-    <entry file="file://$PROJECT_DIR$/examples/backup/test2/json.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar!/com/fasterxml/jackson/annotation/JsonValue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar!/com/fasterxml/jackson/annotation/JsonView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar!/com/fasterxml/jackson/annotation/JacksonAnnotationValue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/bean/BeanElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-627">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/3.3.0/mongo-java-driver-3.3.0.jar!/com/mongodb/util/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/jdom/jdom/1.0/jdom-1.0.jar!/org/jdom/input/DOMBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/bean/BeanAttribute.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/bean/BeanDocumentFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/driver/MongoDBJDBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="205">
-            <caret line="59" column="32" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/generate/constants/GenerateConst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_91/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="1752" column="15" selection-start-line="1752" selection-start-column="15" selection-end-line="1752" selection-end-column="15" />
+        <state relative-caret-position="114">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
-            <element signature="e#66457#66458#0" expanded="false" />
-            <element signature="e#66495#66496#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/modelTable_chapter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1648,118 +1177,396 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/action/specific/FreeMakerCodeGenerator.java">
+    <entry file="file://$PROJECT_DIR$/examples/output/Chapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="180">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/ModelSource.java">
+    <entry file="file://$PROJECT_DIR$/examples/output/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="154">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/specific/PdmModelSource.java">
+    <entry file="file://$PROJECT_DIR$/examples/template/spring/dao/Repository.java.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1277#1288#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-309">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/specific/MongoModelSource.java">
+    <entry file="file://$PROJECT_DIR$/examples/template/spring/service/Service.java.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="261">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/specific/JsonModelSource.java">
+    <entry file="file://$PROJECT_DIR$/examples/template/allJson.json.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#497#508#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/tao/specific/FileTemplateSource.java">
+    <entry file="file://$PROJECT_DIR$/examples/output/Repository_course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#525#533#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/tao/TemplateSource.java">
+    <entry file="file://$PROJECT_DIR$/examples/output/Repository_chapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/Service_chapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/Service_course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/command/StringUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/spring/bean/Bean_course1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/allJson_badmodel.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/allJson_json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/template/spring/bean/Bean.java.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/html/modelTable_chapter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/html/modelTable_course.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/spring/bean/Bean_chapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entry/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/constants/AddressType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/CodeTemplate.java">
+    <entry file="file://$PROJECT_DIR$/examples/output/spring/bean/Bean_course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="133">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/spring/dao/Repository_course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/spring/dao/Repository_chapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/spring/service/Service_chapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/spring/service/Service_course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/sql/dll_chapter.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/sql/dll_course.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/allJson_course.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/model/json/course.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/command/FileStringUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/Chapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/dll_chapter.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/dll_test1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/backup/multiTables.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/template/sql/dll.sql.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/allJson_chapter.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/dll_course.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/dll_multiTables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/output/html/modelTable_badmodel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/model/hybrid/json.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/parse/PdmParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/specific/HttpModelSource.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/org/dom4j/DocumentException.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="114">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/DataModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/engine/dao/pdm/pdmall/build/PdmEntityBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="285">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#3252#3253#0" expanded="true" />
+            <element signature="e#3294#3295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/entry/RunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="e#409#417#0" expanded="true" />
+            <element signature="e#466#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-627">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entry/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="98" column="20" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="244">
+            <caret line="89" column="8" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/constants/AddressType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1824,6 +1631,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

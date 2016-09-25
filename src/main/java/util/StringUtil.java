@@ -10,16 +10,11 @@ import java.util.Map;
  * Created by lzy on 2016/8/31.
  */
 public class StringUtil {
-    /*
-    * TODO: json to Object
-    * TODO：jackson的API还不是很清楚
-    * */
+
     //模板文件分隔符
     public static String tplFileNameRegExp="\\.";
     //目录分隔符
-    /*
-    * TODO 该分隔符可以从OS取得
-    * */
+
     public static String fileSeparator=File.separator;
 
     public static Map json2Map(String json){

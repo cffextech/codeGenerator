@@ -19,15 +19,19 @@ import java.util.Map;
 public class PdmModelSource extends ModelSource {
 
     public PdmModelSource(String address) {
+        /*
+        * TODO-new 这里应该有个地址的合法性判断
+        * */
         this.address=address;
     }
-/*
-* TODO-upgrade PdmModelSource是否可以从JsonModelSource继承
-* */
+
     public List<DataModel> getModel() {
         PdmEntityBuilder p = new PdmEntityBuilder(address);
         List<PdmTable> pdmTables = p.parse();
         List<PdmRef> pdmRefs = p.parseRefs(pdmTables);
+        /*
+        * TODO-upgrade 这里不经过json，直接转化为Map root
+        * */
         JsonGenerator jsonGenerator = new JsonGenerator(pdmTables, pdmRefs);
         Map root= StringUtil.json2Map(jsonGenerator.generate());
 
@@ -45,6 +49,7 @@ public class PdmModelSource extends ModelSource {
             DataModel dm=new DataModel();
             dm.setName((String) table.get("tableName"));
             dm.setContent(table);
+            dmList.add(dm);
         }
 
         return dmList;

@@ -1,7 +1,12 @@
-<#--这个可以显示出来-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Java 语言中 Enum 类型的使用介绍</title>
+</head>
+<body>
 <table border="1">
     <tr>
-        <th colspan="2">模型</th>
+        <th colspan="5">${tableName}</th>
     </tr>
     <tr>
         <th>属性名</th>
@@ -10,14 +15,16 @@
         <th>注释</th>
         <th>表限制</th>
     </tr>
-    <#list columns as column>
+<#list columns as column>
     <tr>
-        <td>${column.name}</td>
-        <td>${column.dataType}</td>
-        <#--加if判断-->
-        <td>${column.primaryKey}</td>
-        <td>注释没有</td>
-        <td>${column.notNull}等</td>
+        <td>${column.name?if_exists }</td>
+        <td>${column.dataType?if_exists }</td>
+    <#--加if判断-->
+        <td>${column.primaryKey?string }</td>
+        <td></td>
+        <td>${column.notNull?string("not null","null")}</td>
     </tr>
-    </#list>
+</#list>
 </table>
+</body>
+</html>

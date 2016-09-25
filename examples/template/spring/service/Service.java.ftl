@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import com.cffex.demo.advanced.bean.AdvancedToDo;
+import com.cffex.demo.advanced.bean.${tableName?cap_first};
 import com.cffex.demo.bean.${tableName?cap_first};
 import com.cffex.framework.annotation.Forbid;
 import com.cffex.framework.annotation.Gateway;
