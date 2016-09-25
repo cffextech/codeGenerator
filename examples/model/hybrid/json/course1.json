@@ -1,0 +1,50 @@
+{
+  "columns": [
+    {
+      "code": "id",
+      "dataType": "bigint",
+      "name": "id",
+      "notNull": true,
+      "objectID": "2097E09E-5EC6-44CC-A8DD-85B50ED61E39",
+      "parent": false,
+      "primaryKey": true,
+      "sid": "o11"
+    },
+    {
+      "code": "name",
+      "dataType": "varchar(255)",
+      "length": "255",
+      "name": "name",
+      "notNull": false,
+      "objectID": "B0A6D083-B9DB-4B5A-A750-C86EBBBCC5F4",
+      "parent": false,
+      "primaryKey": false,
+      "sid": "o12"
+    }
+  ],
+  "dbms": "MySQL 5.0",
+  "keys": [
+    {
+      "code": "Key_1",
+      "columnId": "o11",
+      "name": "Key_1",
+      "objectID": "3C765FE1-2FD8-4731-BAB8-1859112A93E4",
+      "primaryKey": true,
+      "sid": "o13"
+    }
+  ],
+  "objectId": "B97514D1-0630-4F44-8C88-D3368CF2D834",
+  "primaryKey": {
+    "code": "id",
+    "dataType": "bigint",
+    "name": "id",
+    "notNull": true,
+    "objectID": "2097E09E-5EC6-44CC-A8DD-85B50ED61E39",
+    "parent": false,
+    "primaryKey": true,
+    "sid": "o11"
+  },
+  "sid": "o9",
+  "tableCode": "course",
+  "tableName": "course"
+}

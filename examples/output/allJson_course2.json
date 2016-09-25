@@ -1,0 +1,25 @@
+{
+    "columns":[
+            {
+                    "code":"id",
+                    "dataType":"bigint",
+                    "name":"id",
+                    "notNull":"true",
+                    "objectID":"2097E09E-5EC6-44CC-A8DD-85B50ED61E39",
+                    "parent":"false",
+                    "primaryKey":"true",
+                    "sid":"o11",
+            },
+            {
+                    "code":"name",
+                    "dataType":"varchar(255)",
+                    "length":"255",
+                    "name":"name",
+                    "notNull":"false",
+                    "objectID":"B0A6D083-B9DB-4B5A-A750-C86EBBBCC5F4",
+                    "parent":"false",
+                    "primaryKey":"false",
+                    "sid":"o12",
+            },
+    ]
+}

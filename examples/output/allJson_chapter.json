@@ -1,0 +1,36 @@
+{
+    "columns":[
+            {
+                    "code":"id",
+                    "dataType":"bigint",
+                    "name":"id",
+                    "notNull":"true",
+                    "objectID":"DF793D2D-ABD0-4EDC-ADA1-4772E72583FA",
+                    "parent":"false",
+                    "primaryKey":"true",
+                    "sid":"o14",
+            },
+            {
+                    "code":"courseId",
+                    "dataType":"bigint",
+                    "name":"courseId",
+                    "notNull":"true",
+                    "objectID":"BCCF1D1C-A3FC-49E6-A180-71ACA56D336B",
+                    "parent":"false",
+                    "primaryKey":"false",
+                    "refTableId":"o9",
+                    "sid":"o15",
+            },
+            {
+                    "code":"chapterName",
+                    "dataType":"varchar(255)",
+                    "length":"255",
+                    "name":"chapterName",
+                    "notNull":"false",
+                    "objectID":"B06375B9-F0E0-4E8C-88EF-07D87FC01C4B",
+                    "parent":"false",
+                    "primaryKey":"false",
+                    "sid":"o16",
+            },
+    ]
+}
