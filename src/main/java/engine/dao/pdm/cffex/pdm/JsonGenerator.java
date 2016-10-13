@@ -6,8 +6,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import engine.dao.pdm.pdmall.build.PdmEntityBuilder;
-import engine.dao.pdm.pdmall.entities.PdmRef;
-import engine.dao.pdm.pdmall.entities.PdmTable;
 
 public class JsonGenerator {
 

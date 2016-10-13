@@ -12,10 +12,6 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
 import engine.dao.pdm.pdmall.config.Config;
-import engine.dao.pdm.pdmall.entities.PdmColumn;
-import engine.dao.pdm.pdmall.entities.PdmKey;
-import engine.dao.pdm.pdmall.entities.PdmPackage;
-import engine.dao.pdm.pdmall.entities.PdmTable;
 
 @Deprecated
 public class PdmParseBuild {

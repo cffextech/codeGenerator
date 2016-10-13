@@ -13,10 +13,6 @@ import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
 import engine.dao.pdm.pdmall.build.PdmEntityBuilder;
-import engine.dao.pdm.pdmall.entities.PdmColumn;
-import engine.dao.pdm.pdmall.entities.PdmKey;
-import engine.dao.pdm.pdmall.entities.PdmRef;
-import engine.dao.pdm.pdmall.entities.PdmTable;
 
 public class PdmGenerator {
 

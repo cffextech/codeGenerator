@@ -5,11 +5,6 @@ import java.util.Iterator;
 import java.util.List;
 
 
-import engine.dao.pdm.pdmall.entities.PdmColumn;
-import engine.dao.pdm.pdmall.entities.PdmKey;
-import engine.dao.pdm.pdmall.entities.PdmPackage;
-import engine.dao.pdm.pdmall.entities.PdmRef;
-import engine.dao.pdm.pdmall.entities.PdmTable;
 import engine.dao.pdm.pdmall.parse.PdmParser;
 
 public class PdmEntityBuilder {

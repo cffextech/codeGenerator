@@ -10,7 +10,6 @@ import org.dom4j.Node;
 
 import engine.dao.pdm.pdmall.build.PdmEntityBuilder;
 import engine.dao.pdm.pdmall.config.Config;
-import engine.dao.pdm.pdmall.entities.PdmTable;
 
 
 public class Test extends TestCase{
